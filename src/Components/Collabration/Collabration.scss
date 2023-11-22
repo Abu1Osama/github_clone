@@ -1,0 +1,39 @@
+#Collabration.Collabration{
+    color: white;
+    // width: 80%;
+    align-self: flex-end;
+    margin-top: 50px;
+    .top{
+        display: grid;
+        grid-template-columns:70% 30% ;
+        position: relative;
+        .left{
+            margin-left: 200px;
+            h1{
+                font-size: 50px;
+                margin-top: 15px;
+                font-weight: 500;
+            }
+            h3{
+                font-size: 24px;
+            }
+            span{
+                color: #f778ba;
+            }
+        }
+        .right{
+            img{
+                width: 100%;
+            }
+        }
+        .commit-img{
+            position: absolute;
+            bottom: -50%;
+            display:flex;
+            justify-content: center;
+            img{
+                width: 80%;
+            }
+        }
+    }
+}

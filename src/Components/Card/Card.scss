@@ -1,0 +1,38 @@
+#Card.Card{
+    display: flex;
+    gap: 40px;
+    color: white;
+    width: 85%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    span{
+        color: #7e8590;
+    }
+    img{
+        width: 100%;
+    }
+    .left-card{
+        border: 1px solid #57606a;
+        border-radius: 10px;
+        background-color: #161b22;
+        .card-data{
+            padding: 50px 90px;
+        }
+    }
+    .right-card{
+        border: 1px solid #57606a;
+        border-radius: 10px;
+        background-color: #161b22;
+        .card-data{
+            padding: 50px 90px;
+        }
+    }
+}
