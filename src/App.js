@@ -7,6 +7,7 @@ import Header from './Components/Header/Header';
 import AOS from "aos";
 import Card from './Components/Card/Card';
 import MAinSection from './Components/MainSection/MAinSection';
+import BottomSection from './Components/BottomSection/BottomSection';
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
   <Collabration/>
   <GithubIssue/>
   <Card/>
+  <BottomSection/>
   <Footer/>
   
   </>
