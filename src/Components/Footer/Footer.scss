@@ -1,54 +1,89 @@
 #Footer.Footer {
-  display: grid;
-  grid-template-columns: 30% 50%;
-  justify-content: center;
+  
   background:#0d1117;
   color: white;
+ 
+  .footer-top{
+    display: grid;
+  grid-template-columns: 30% 50%;
+  justify-content: center;
   padding: 100px 0;
   gap: 15px;
-  ul {
-    li {
-      font-size: 14px;
-      list-style: none;
-      color: #7d8590;
-      font-size: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-        Liberation Mono, monospace !important;
-      cursor: pointer;
-      &:hover {
-        text-decoration: underline;
+    ul {
+        li {
+          font-size: 14px;
+          list-style: none;
+          color: #7d8590;
+          font-size: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+            Liberation Mono, monospace !important;
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
-    }
+      .Footer-left {
+        h1 {
+          margin-bottom: 30px;
+        }
+        p {
+          color: #7d8590;
+          font-size: 14px;
+        }
+        button {
+          padding: 15px 30px;
+          border-radius: 6px;
+          color: white;
+          background: transparent;
+          border: 1px solid #57606a;
+          margin-top: 20px;
+          font-weight: bold;
+          font-size: 16px;
+          cursor: pointer;
+        }
+      }
+      .Footer-right {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        justify-content: space-between;
+        .right-child {
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+          }
+        }
+      }
   }
-  .Footer-left {
-    h1 {
-      margin-bottom: 30px;
-    }
-    p {
-      color: #7d8590;
-      font-size: 14px;
-    }
-    button {
-      padding: 15px 30px;
-      border-radius: 6px;
-      color: white;
-      background: transparent;
-      border: 1px solid #57606a;
-      margin-top: 20px;
-      font-weight: bold;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  }
-  .Footer-right {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    justify-content: space-between;
-    .right-child {
-      ul {
+  .footer-bottom{
+    background: #161b22;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 30px;
+    .footer-bottom-left{
         display: flex;
-        flex-direction: column;
+        align-items: center;
         gap: 15px;
-      }
+        span{
+
+            color:#959da5;
+            font-size: 12px;
+            cursor: pointer;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+    }
+    .footer-bottom-right{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        i{
+            color:#959da5;
+            cursor: pointer;
+        }
     }
   }
+ 
 }
