@@ -8,6 +8,9 @@ import AOS from "aos";
 import Card from './Components/Card/Card';
 import MAinSection from './Components/MainSection/MAinSection';
 import BottomSection from './Components/BottomSection/BottomSection';
+import Vulnerabilityfixes from './Components/vulnerabilityfixes/Vulnerabilityfixes';
+import VulnerabilityCard from './Components/vulnerabilityCard/VulnerabilityCard';
+import Application from './Components/Application/Application';
 
 function App() {
   useEffect(() => {
@@ -17,6 +20,9 @@ function App() {
   <>
   <Header/>
   <MAinSection/>
+  <Application/>
+  <Vulnerabilityfixes/>
+  <VulnerabilityCard/>
   <Collabration/>
   <GithubIssue/>
   <Card/>

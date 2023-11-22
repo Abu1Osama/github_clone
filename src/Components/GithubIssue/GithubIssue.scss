@@ -2,14 +2,26 @@
   margin-top: 450px;
   color: white;
   position: relative;
+  display: flex;
+  .GithubIssue-left {
+    margin-left: 150px;
+    .first {
+      transition-duration: 1100ms;
+      background: linear-gradient(transparent, #f778ba, #f778ba, transparent);
+
+      width: 3px;
+      height: 100%;
+    }
+  }
   .container {
-    margin-left: 100px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-top: 50px;
     .GithubIssue-child {
-        margin-left: 100px;
+      margin-left: 100px;
       width: 35%;
+    //   margin-top: 60px;
       h2 {
         font-size: 24px;
         margin-bottom: 20px;
@@ -22,37 +34,37 @@
         font-size: 20px;
       }
     }
-    .did-you-know{
-        margin-top: 80px;
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        span{
-            border: 1px solid #f778ba;;
-            padding: 4px 30px;
-            border-radius: 9999px;
-            font-size: 12px;
-            color: #f778ba;
-        }
-        h1{
-            font-size: 80px;
-            color: #f778ba;
-            font-weight: 500;
-        }
-        h2{
-            font-weight: 500;
-            font-size: 24px;
-        }
+    .did-you-know {
+      margin-top: 0px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      span {
+        border: 1px solid #f778ba;
+        padding: 4px 30px;
+        border-radius: 9999px;
+        font-size: 12px;
+        color: #f778ba;
+      }
+      h1 {
+        font-size: 80px;
+        color: #f778ba;
+        font-weight: 500;
+      }
+      h2 {
+        font-weight: 500;
+        font-size: 24px;
+      }
     }
   }
-  .card-absolute{
+  .card-absolute {
     position: absolute;
-    top: -300px;
-    right: 100px;
-    img{
-        width: 600px;
-        height: 600px;
-        object-fit: contain;
+    top: -150px;
+    right: 50px;
+    img {
+      width: 600px;
+      height: 600px;
+      object-fit: contain;
     }
   }
 }

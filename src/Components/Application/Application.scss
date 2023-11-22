@@ -1,0 +1,71 @@
+#Application.Application {
+    color: white;
+    // width: 80%;
+    align-self: flex-end;
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    position: relative;
+    .Collabration-line {
+      margin-left: 150px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      .line-container_one {
+        // height: 250px;
+        background: linear-gradient( transparent,rgb(51, 179, 174) 40%,);
+        width: 3px;
+      }
+      .line-container_three {
+      }
+      .line-container_three {
+        width: 3px;
+        background: linear-gradient(rgb(51, 179, 174) 40%, transparent);
+        transition-delay: 500ms;
+        height: 100%;
+      }
+    }
+  
+    .top {
+      display: grid;
+      grid-template-columns: 60% 40%;
+    //   margin-top: 195px;
+      gap:30px;
+      overflow: hidden;
+  
+      .left {
+        h1 {
+          font-size: 50px;
+          margin-top: 15px;
+          font-weight: 500;
+        }
+        h3 {
+            color: #33b3ae;
+          font-size: 24px;
+        }
+        span {
+          color: #33b3ae;
+        }
+      }
+      .right {
+        img {
+          // width: 100%;
+        }
+      }
+      .commit-img {
+        position: absolute;
+        bottom: -20%;
+        display: flex;
+        right: 0px;
+        justify-content: center;
+        img {
+          width: 98%;
+          padding: 70px;
+          border-radius: 88px;
+  
+        }
+      }
+    }
+  }
+  

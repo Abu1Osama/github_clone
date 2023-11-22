@@ -5,6 +5,11 @@ import card_three from "../../assets/card3.png"
 function GithubIssue() {
   return (
     <div className='GithubIssue' id='GithubIssue'>
+        <div className="GithubIssue-left">
+            <div className="first" data-aos="fade-down">
+
+            </div>
+        </div>
         <div className="container">
 
      <div  data-aos="fade-left" className="GithubIssue-child">
