@@ -46,11 +46,39 @@
             padding: 10px 20px;
             border-radius: 12px;
             div {
-              border-bottom: 1px solid white;
-              padding: 15px 0;
+              border-bottom: 1px solid rgb(193, 193, 193);
+              padding: 15px 60px 15px 15px;
+              
             }
             p {
-              font-size: 12px;
+              font-size: 14px;
+              color: gray;
+              margin-top: 10px;
+            }
+          }
+        }
+        .open-solution{
+          .open-solution-data {
+            position: absolute;
+            width: max-content;
+            top: 50px;
+            left: 100px;
+            background:white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 10px 20px;
+            border-radius: 12px;
+            div {
+              border-bottom: 1px solid rgb(193, 193, 193);
+              padding: 15px ;
+              
+            }
+            p {
+              font-size: 14px;
+              color: gray;
+              margin-top: 15px;
             }
           }
         }

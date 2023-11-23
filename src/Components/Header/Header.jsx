@@ -2,14 +2,21 @@ import React, { useState } from "react";
 import "../Header/Header.scss";
 
 function Header() {
-    const [source,setSource]=useState(false)
+  const [source, setSource] = useState(false);
+  const [solution, setSolution] = useState(false);
 
-    const opensource=()=>{
-        setSource(true)
-    }
-    const closesource=()=>{
-        setSource(false)
-    }
+  const opensource = () => {
+    setSource(true);
+  };
+  const closesource = () => {
+    setSource(false);
+  };
+  const opensolution = () => {
+    setSolution(true);
+  };
+  const closesolution = () => {
+    setSolution(false);
+  };
   return (
     <div id="Header" className="Header">
       <div className="left">
@@ -21,26 +28,52 @@ function Header() {
             <li>
               Product <i class="fa-solid fa-angle-down"></i>
             </li>
-            <li>
+            <li className="open-solution" onMouseEnter={opensolution}>
               Solutions <i class="fa-solid fa-angle-down"></i>
+              {solution && (
+                <div className="open-solution-data" onMouseLeave={closesolution}>
+                  <div>
+                    <h4>For</h4>
+                    <p>Enterprise</p>
+                    <p>Teams</p>
+                    <p>Startups</p>
+                    <p>Education</p>
+                  </div>
+                  <div>
+                    <h4>By Solution</h4>
+                    <p>CI/CD % Automation</p>
+                    <p>DevOps</p>
+                    <p>DevSecOps</p>
+                  </div>
+                  <div style={{borderBottom:"none"}}>
+                    <h4>Resources</h4>
+                    <p>Learning Pathway</p>
+                    <p>White Papers ,Ebooks,Webinars</p>
+                    <p>Partners</p>
+                  </div>
+                </div>
+              )}
             </li>
             <li className="open-source" onMouseEnter={opensource}>
               Open Source <i class="fa-solid fa-angle-down"></i>
-              {source&&    <div className="open-source-data" onMouseLeave={closesource}>
-                <div>
-                  <h4>GitHub Sponsors</h4>
-                  <p>Fund open source developers</p>
+              {source && (
+                <div className="open-source-data" onMouseLeave={closesource}>
+                  <div>
+                    <h4>GitHub Sponsors</h4>
+                    <p>Fund open source developers</p>
+                  </div>
+                  <div>
+                    <h4>The ReadME Project</h4>
+                    <p>GitHub Community articles</p>
+                  </div>
+                  <div style={{borderBottom:"none"}}>
+                    <h4>Repositories</h4>
+                    <p>Topic</p>
+                    <p>Trending</p>
+                    <p>Collection</p>
+                  </div>
                 </div>
-                <div>
-                  <h4>GitHub Sponsors</h4>
-                  <p>Fund open source developers</p>
-                </div>
-                <div>
-                  <h4>GitHub Sponsors</h4>
-                  <p>Fund open source developers</p>
-                </div>
-              </div>}
-          
+              )}
             </li>
             <li>Pricing</li>
           </ul>
@@ -67,7 +100,7 @@ function Header() {
           </svg>
         </div>
         <div className="user">
-          <button style={{border:"none"}}>Sign in</button>
+          <button style={{ border: "none" }}>Sign in</button>
           <button>Sign up</button>
         </div>
       </div>
